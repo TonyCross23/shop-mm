@@ -1,4 +1,3 @@
-import { CiBellOn } from "react-icons/ci";
 import { IoMdMenu } from "react-icons/io";
 import { useState } from "react";
 import { RxCross2 } from "react-icons/rx";
@@ -26,8 +25,8 @@ const NavBar = () => {
             to="/"
             className={({ isActive }) =>
               isActive
-                ? "text-blue-500 font-bold"
-                : "text-gray-600 dark:text-gray-300 hover:text-blue-500"
+                ? "text-blue-500 font-bold mt-2"
+                : "text-gray-600 dark:text-gray-300 hover:text-blue-500 mt-2"
             }
           >
             Home
@@ -36,8 +35,8 @@ const NavBar = () => {
             to="/recipes/save"
             className={({ isActive }) =>
               isActive
-                ? "text-blue-500 font-bold"
-                : "text-gray-600 dark:text-gray-300 hover:text-blue-500"
+                ? "text-blue-500 font-bold mt-2"
+                : "text-gray-600 dark:text-gray-300 hover:text-blue-500 mt-2"
             }
           >
             Shopping
@@ -46,8 +45,8 @@ const NavBar = () => {
             to="/contact"
             className={({ isActive }) =>
               isActive
-                ? "text-blue-500 font-bold"
-                : "text-gray-600 dark:text-gray-300 hover:text-blue-500"
+                ? "text-blue-500 font-bold mt-2"
+                : " dark:text-gray-300 hover:text-blue-500 bg-red-500 p-2 rounded-3xl px-3 text-white"
             }
           >
             Contact
