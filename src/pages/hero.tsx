@@ -14,8 +14,8 @@ const Hero = () => {
         <div
           key={index}
           className={`
-            flex items-center justify-center gap-2 md:gap-2 py-2 md:py-5 md:text-md text-sm text-black font-semibold 
-            border border-red-300
+            flex items-center justify-center gap-2 md:gap-2 py-2 md:py-5 md:text-md text-sm text-black dark:text-white font-semibold 
+            border border-red-600
             flex-1
             flex-col
             md:flex-row
@@ -24,7 +24,7 @@ const Hero = () => {
             ${index !== 0 ? 'border-l-0' : ''}
           `}
         >
-          <ShoppingBag className="text-red-300" />
+          <ShoppingBag className="text-red-600" />
           <span className="">{item}</span>
         </div>
       ))}

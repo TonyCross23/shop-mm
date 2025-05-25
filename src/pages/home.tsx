@@ -1,6 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
@@ -23,27 +22,27 @@ const Home = () => {
         pagination={{ clickable: true }}
         autoplay={{ delay: 5000 }}
         loop
-       className="md:w-full md:h-full lg:w-full lg:h-full w-full h-[400px] custom-swiper"
+       className="md:w-full md:h-full lg:w-full lg:h-full w-full h-[300px] product-swiper"
       >
         <SwiperSlide>
           <img
             src={Cover}
             alt="Cover"
-            className="w-full h-[400px] md:w-full md:h-full md:object-cover"
+            className="w-full h-[300px] md:w-full md:h-full md:object-cover"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             src={Cover1}
             alt="Cover 1"
-            className="w-full h-[400px] md:w-full md:h-full md:object-cover"
+            className="w-full h-[300px] md:w-full md:h-full md:object-cover"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             src={Cover2}
             alt="Cover 2"
-            className="w-full h-[400px] md:w-full md:h-full md:object-cover"
+            className="w-full h-[300px] md:w-full md:h-full md:object-cover"
           />
         </SwiperSlide>
       </Swiper>
@@ -64,9 +63,6 @@ const Home = () => {
     </div> 
       <div>
         <Hero/>
-      </div>
-      <div className="mt-9 flex flex-col items-center justify-center">
-        <Second/>
       </div>
       <div>
         <ProductSlider/>
