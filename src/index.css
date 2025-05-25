@@ -1,1 +1,40 @@
 @import "tailwindcss";
+
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Swiper custom nav buttons */
+.product-swiper .swiper-button-next,
+.product-swiper .swiper-button-prev {
+  color: #ef4444;
+  background-color: #ffffff;
+  border-radius: 9999px;
+  padding: 0.75rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  width: 44px;
+  height: 44px;
+}
+
+.product-swiper .swiper-button-next {
+  right: 0px;
+}
+
+.product-swiper .swiper-button-prev {
+  left: 0px;
+}
+
+.product-swiper .swiper-button-next::after,
+.product-swiper .swiper-button-prev::after {
+  font-size: 18px;
+}
+
+/* Responsive nav button positioning */
+@media (min-width: 768px) {
+  .product-swiper .swiper-button-next {
+    right: -20px;
+  }
+  .product-swiper .swiper-button-prev {
+    left: -20px;
+  }
+}

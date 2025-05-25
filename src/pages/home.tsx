@@ -8,20 +8,22 @@ import Cover from "../assets/cover.jpg"
 import Cover1 from "../assets/cover1.jpg"
 import Cover2 from "../assets/cover2.jpg"
 import Hero from "./hero";
+import Second from "./second";
+import ProductSlider from "./productSlider";
 
 const Home = () => {
   return (
     <>
-         <div className="relative mb-4 w-full h-[700px] rounded-lg overflow-hidden">
+      <div className="relative mb-4 w-full md:h-[700px] rounded-lg overflow-hidden">
 
       {/*Swiper slides */}
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         navigation
         pagination={{ clickable: true }}
-        autoplay={{ delay: 3000 }}
+        autoplay={{ delay: 5000 }}
         loop
-        className="md:w-full md:h-full lg:w-full lg:h-full w-full h-[400px]"
+       className="md:w-full md:h-full lg:w-full lg:h-full w-full h-[400px] custom-swiper"
       >
         <SwiperSlide>
           <img
@@ -47,12 +49,12 @@ const Home = () => {
       </Swiper>
 
       {/*Overlay content */}
-      <div className="absolute inset-0 z-10 mb-48 md:mb-2 flex flex-col items-center justify-center text-center text-white space-y-6 pointer-events-none">
+      <div className="absolute inset-0 z-10 mt-15 md:mt-2 flex flex-col items-center justify-center text-center text-white space-y-2 md:space-y-4 pointer-events-none">
         <p className="text-base md:text-2xl text-black">Trend design!</p>
         <h1 className="text-2xl md:text-6xl font-extrabold text-black">
           <strong>Welcome to Our Shopping</strong>
         </h1>
-        <p className="text-sm md:text-lg bg-amber-50 text-black p-2 border border-white rounded-sm md:max-w-md">
+        <p className="text-sm md:text-lg  text-black p-2 md:max-w-md">
           Discover the best products at unbeatable prices!
         </p>
         <button className="mt-2 md:mt-4 px-4 md:px-6 py-2 bg-red-500 text-white rounded-lg hover:bg-blue-600 transition duration-300 pointer-events-auto">
@@ -62,6 +64,12 @@ const Home = () => {
     </div> 
       <div>
         <Hero/>
+      </div>
+      <div className="mt-9 flex flex-col items-center justify-center">
+        <Second/>
+      </div>
+      <div>
+        <ProductSlider/>
       </div>
     </>
   )
