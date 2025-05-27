@@ -8,6 +8,7 @@ import Cover1 from "../assets/cover1.jpg"
 import Cover2 from "../assets/cover2.jpg"
 import Hero from "./hero";
 import ProductSlider from "./productSlider";
+import PromoBanners from "./promoBanners";
 
 const Home = () => {
   return (
@@ -65,6 +66,9 @@ const Home = () => {
       </div>
       <div className="max-w-[1600px] mx-auto">
         <ProductSlider/>
+        <div>
+          <PromoBanners/>
+        </div>
       </div>
     </>
   )
