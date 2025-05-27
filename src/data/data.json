@@ -1,0 +1,16 @@
+{
+  "categories": [
+    { "id": "all", "name": "All" },
+    { "id": "men", "name": "Men" },
+    { "id": "women", "name": "Women" },
+    { "id": "accessories", "name": "Accessories" }
+  ],
+  "products": [
+    { "id": 1, "name": "Shirt", "category": "men", "price": "25000 MMK", "image": "src/assets/cover.jpg" },
+    { "id": 2, "name": "Dress", "category": "women", "price": "60000 MMK", "image": "src/assets/cover1.jpg" },
+    { "id": 3, "name": "Watch", "category": "accessories", "price": "120000 MMK", "image": "src/assets/cover2.jpg" },
+    { "id": 4, "name": "Jeans", "category": "men", "price": "45000 MMK", "image": "src/assets/cover.jpg" },
+    { "id": 5, "name": "Earrings", "category": "accessories", "price": "15000 MMK", "image": "src/assets/cover1.jpg" },
+    { "id": 6, "name": "Jacket", "category": "women", "price": "70000 MMK", "image": "src/assets/cover2.jpg" }
+  ]
+}

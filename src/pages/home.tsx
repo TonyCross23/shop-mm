@@ -7,7 +7,6 @@ import Cover from "../assets/cover.jpg"
 import Cover1 from "../assets/cover1.jpg"
 import Cover2 from "../assets/cover2.jpg"
 import Hero from "./hero";
-import Second from "./second";
 import ProductSlider from "./productSlider";
 
 const Home = () => {
@@ -64,7 +63,7 @@ const Home = () => {
       <div>
         <Hero/>
       </div>
-      <div>
+      <div className="max-w-[1600px] mx-auto">
         <ProductSlider/>
       </div>
     </>

@@ -1,8 +1,8 @@
 import { IoMdMenu } from "react-icons/io";
 import { useState } from "react";
 import { RxCross2 } from "react-icons/rx";
-import { FaPlateWheat } from "react-icons/fa6";
 import { NavLink } from "react-router";
+import { ShoppingBagIcon } from "lucide-react";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,8 +13,8 @@ const NavBar = () => {
 
         {/* Left: Logo */}
         <div className="flex items-center gap-2">
-          <FaPlateWheat className="text-2xl text-blue-500" />
-          <NavLink to="/" className="text-xl font-bold uppercase dark:text-white">
+          <ShoppingBagIcon className="text-4xl text-red-500" />
+          <NavLink to="/" className="text-xl font-bold uppercase text-red-500 dark:text-white">
             Shopping
           </NavLink>
         </div>
@@ -25,8 +25,8 @@ const NavBar = () => {
             to="/"
             className={({ isActive }) =>
               isActive
-                ? "text-blue-500 font-bold mt-2"
-                : "text-gray-600 dark:text-gray-300 hover:text-blue-500 mt-2"
+                ? "text-red-500 font-bold mt-2"
+                : "text-gray-600 dark:text-gray-300 hover:text-red-500 mt-2"
             }
           >
             Home
@@ -35,8 +35,8 @@ const NavBar = () => {
             to="/recipes/save"
             className={({ isActive }) =>
               isActive
-                ? "text-blue-500 font-bold mt-2"
-                : "text-gray-600 dark:text-gray-300 hover:text-blue-500 mt-2"
+                ? "text-red-500 font-bold mt-2"
+                : "text-gray-600 dark:text-gray-300 hover:text-red-500 mt-2"
             }
           >
             Shopping
@@ -45,8 +45,8 @@ const NavBar = () => {
             to="/contact"
             className={({ isActive }) =>
               isActive
-                ? "text-blue-500 font-bold mt-2"
-                : " dark:text-gray-300 hover:text-blue-500 bg-red-500 p-2 rounded-3xl px-3 text-white"
+                ? "text-red-500 font-bold mt-2"
+                : " dark:text-gray-300 hover:text-gray-200 bg-red-500 p-2 rounded-3xl px-3 text-white"
             }
           >
             Contact
