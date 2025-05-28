@@ -22,9 +22,9 @@ const ProductCard: React.FC<ProductProps> = ({ product }) => {
               {product.name}
             </h3>
             <p className="text-red-500 font-bold mt-1">{product.price}</p>
-            <button className="mt-3 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 transition duration-300">
+            {/* <button className="mt-3 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 transition duration-300">
               Show Details
-            </button>
+            </button> */}
           </div>
         </div>
   );

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Women's Party Wear",
+    "subtitle": "Trendy Fashion",
+    "img": "src/assets/cover.jpg",
+    "bg": "bg-pink-300",
+    "height": "h-[145px] md:h-[300px]",
+    "type": "single"
+  },
+  {
+    "id": 2,
+    "type": "group",
+    "items": [
+      {
+        "id": "2-1",
+        "title": "Men's Summer Arrival",
+        "subtitle": "Men's Fashion",
+        "img": "src/assets/cover1.jpg",
+        "bg": "bg-green-300",
+        "height": "h-[145px]"
+      },
+      {
+        "id": "2-2",
+        "title": "Flat 20% Off",
+        "subtitle": "Stylish Wear",
+        "img": "src/assets/cover1.jpg",
+        "bg": "bg-yellow-300",
+        "height": "h-[145px]"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Flat 30% Off Clothes",
+    "subtitle": "Stylish Fashion",
+    "img": "src/assets/cover2.jpg",
+    "bg": "bg-blue-300",
+    "height": "h-[145px] md:h-[300px]",
+    "type": "single"
+  }
+]
