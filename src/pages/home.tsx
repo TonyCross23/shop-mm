@@ -56,7 +56,7 @@ const Home = () => {
         <p className="text-sm md:text-lg  text-black p-2 md:max-w-md">
           Discover the best products at unbeatable prices!
         </p>
-        <button className="mt-2 md:mt-4 px-4 md:px-6 py-2 bg-red-500 text-white rounded-lg hover:bg-blue-600 transition duration-300 pointer-events-auto">
+        <button className="mt-2 md:mt-4 px-4 md:px-6 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition duration-300 pointer-events-auto">
           Shop Now
         </button>
       </div>

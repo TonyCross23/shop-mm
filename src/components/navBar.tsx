@@ -14,7 +14,7 @@ const NavBar = () => {
         {/* Left: Logo */}
         <div className="flex items-center gap-2">
           <ShoppingBagIcon className="text-4xl text-red-500" />
-          <NavLink to="/" className="text-xl font-bold uppercase text-red-500 dark:text-white">
+          <NavLink to="/" className="text-xl font-bold uppercase text-red-500">
             Shopping
           </NavLink>
         </div>
@@ -32,7 +32,7 @@ const NavBar = () => {
             Home
           </NavLink>
           <NavLink
-            to="/recipes/save"
+            to="/shopping"
             className={({ isActive }) =>
               isActive
                 ? "text-red-500 font-bold mt-2"

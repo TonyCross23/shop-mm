@@ -3,7 +3,7 @@ import promoData from "../data/promoData.json"
 const PromoBanners = () => {
   return (
     <>
-      <h4 className="text-center font-extrabold text-3xl">Discount Products</h4>
+      <h4 className="text-center font-extrabold text-3xl dark:text-white">Discount Products</h4>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-10 px-4">
         {promoData.map((item) => {
           // Single Banner
@@ -29,7 +29,7 @@ const PromoBanners = () => {
           // Grouped Banners (Flex Column)
           if (item.type === "group") {
             return (
-              <div key={item.id} className="flex flex-col gap-4">
+              <div key={item.id} className="flex flex-col gap-3">
                 {item.items?.map((subItem) => (
                   <div
                     key={subItem.id}

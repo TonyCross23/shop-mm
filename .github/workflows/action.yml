@@ -1,0 +1,30 @@
+name: Shopping
+
+on: 
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run a one-line script
+        run: echo "running first part"
+      
+      - name: setup node js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 22
+          cache: "pnpm"
+    
+      - name: Install dependencies
+        run: pnpm install
+    
+      - name: Run build
+        run: pnpm run build
+ 

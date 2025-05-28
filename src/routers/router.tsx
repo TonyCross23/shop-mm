@@ -10,6 +10,10 @@ export const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home/>
+            },
+            {
+                path: "/shopping",
+                element: <div className="text-3xl flex items-center justify-center mt-48 dark:text-white">Coming soon....</div>
             }
         ]
     }
