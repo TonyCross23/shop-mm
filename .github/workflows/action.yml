@@ -17,16 +17,21 @@ jobs:
 
       - name: Run a one-line script
         run: echo "running first part"
-      
+
       - name: setup node js
         uses: actions/setup-node@v3
         with:
           node-version: 22
           cache: "pnpm"
-    
+
+      # Enable corepack and install pnpm
+      - name: Enable Corepack & Install pnpm
+        run: |
+          corepack enable
+          corepack prepare pnpm@latest --activate
+
       - name: Install dependencies
         run: pnpm install
-    
+
       - name: Run build
         run: pnpm run build
- 
