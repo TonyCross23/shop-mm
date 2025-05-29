@@ -41,16 +41,12 @@ const NavBar = () => {
           >
             Shopping
           </NavLink>
-          <NavLink
-            to="/contact"
-            className={({ isActive }) =>
-              isActive
-                ? "text-red-500 font-bold mt-2"
-                : " dark:text-gray-300 hover:text-gray-200 bg-red-500 p-2 rounded-3xl px-3 text-white"
-            }
+          <a
+            href="#contact"
+            className=" dark:text-gray-300 hover:text-gray-200 bg-red-500 p-2 rounded-3xl px-3 text-white"
           >
             Contact
-          </NavLink>
+          </a>
         </div>
 
         {/* Right: Icon & Menu */}
@@ -75,8 +71,8 @@ const NavBar = () => {
   } flex flex-col items-center border-t border-gray-300 dark:border-gray-700`}
 >
   <div className="mt-1 flex flex-col w-full">
-    {["/", "/recipes/save", "/contact"].map((path, index) => {
-      const labels = ["Home", "Save", "About"];
+    {["/", "/shopping",].map((path, index) => {
+      const labels = ["Home", "Shopping"];
       return (
         <NavLink
           key={index}
@@ -84,7 +80,7 @@ const NavBar = () => {
           className={({ isActive }) =>
             `text-center py-3 transition ${
               isActive
-                ? "bg-gray-100 text-black dark:text-black"
+                ? "bg-red-500 text-white rounded-md mx-2 dark:text-black"
                 : "hover:bg-gray-100 text-black dark:text-white dark:hover:text-black"
             }`
           }
