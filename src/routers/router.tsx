@@ -19,5 +19,5 @@ export const router = createBrowserRouter([
     }
 ],
  {
-    basename: '/shop-mm',
+    basename: '/shop-mm/',
   })
