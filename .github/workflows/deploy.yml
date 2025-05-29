@@ -1,0 +1,43 @@
+name: Shopping 
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-deploy:
+      runs-on: ubuntu-latest
+
+      steps:
+         #checkout the repository
+         - name: Checkout code
+           uses: actions/checkout@v3
+
+         #setup node js
+         - name: Checkout code
+           uses: actions/setup-node@v3
+           with:
+            node-version: 22
+          
+          # Install pnpm using the official pnpm action
+         - name: Install pnpm
+           uses: pnpm/action-setup@v3
+           with:
+            version: 8 # or your desired pnpm version
+
+         # Install dependencies using pnpm
+         - name: Install Dependencies
+           run: pnpm install
+
+         # Build your project
+         - name: Build Project
+           run: pnpm build
+
+           # Deploy to github pages
+         - name: Deploy to github pages
+           uses: peaceiris/actions-gh-pages@v3
+           with:
+             github_token: ${{secrets.GITHUB_TOKEN}}
+             publish_dir: dist
+              
