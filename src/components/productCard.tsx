@@ -1,4 +1,5 @@
 import React from "react";
+import {motion} from "motion/react"
 import type { ProductTypes } from "../types/types";
 
 interface ProductProps {
@@ -8,7 +9,11 @@ interface ProductProps {
 const ProductCard: React.FC<ProductProps> = ({ product }) => {
   return (
       
-        <div className="relative border border-gray-200 dark:border-gray-600 rounded-lg overflow-hidden shadow-md cursor-pointer">
+        <motion.div
+          initial={{opacity: 0, scale: 0}}
+          whileInView={{opacity: 1, scale: 1}}
+          transition={{duration: 1}} 
+          className="relative border border-gray-200 dark:border-gray-600 rounded-lg overflow-hidden shadow-md cursor-pointer">
           <div className="absolute top-0 left-0 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-br-lg z-10">
             Shop
           </div>
@@ -26,7 +31,7 @@ const ProductCard: React.FC<ProductProps> = ({ product }) => {
               Show Details
             </button> */}
           </div>
-        </div>
+        </motion.div>
   );
 };
 
